@@ -7,11 +7,13 @@ import org.junit.jupiter.api.Test;
 class BMICalculatorTest {
 
     // Test 1: BMI calculation
-	@Test
-	void testBMICalculation() {
-	    double bmi = BMICalculator.calculateBMI(68, 1.7);
-	    assertEquals(25.00, bmi, 0.01); // Intentional wrong expected value
-	}
+    @Test
+    void testBMICalculation() {
+
+        double bmi = BMICalculator.calculateBMI(68, 1.7);
+
+        assertEquals(23.53, bmi, 0.01);
+    }
 
     // Test 2: Underweight
     @Test
